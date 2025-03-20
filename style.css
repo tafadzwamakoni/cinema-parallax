@@ -1,0 +1,84 @@
+/* General Reset and Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.parallax {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  height:100%;
+  width:100%;
+  background-color: rgba(0,0,0,0.5);
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.overlay h1, .overlay h2 {
+  font-size:3rem;
+}
+
+/* Specific Sections Backgrounds */
+.hero {
+  background-image: url('https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg');
+}
+
+.movies {
+  background-image: url('https://images.pexels.com/photos/3945317/pexels-photo-3945317.jpeg');
+}
+
+.footer-section {
+  background-image: url('https://images.pexels.com/photos/7234216/pexels-photo-7234216.jpeg');
+}
+
+/* Content Sections */
+.content {
+  padding:4rem;
+  text-align:center;
+  background-color:#111;
+}
+
+.content h2 {
+  margin-bottom:1rem;
+}
+
+.movies-list {
+  display:flex;
+  justify-content:center;
+}
+
+.movie-card {
+  margin:0.5rem;
+}
+
+.movie-card img {
+  border-radius:5px;
+}
+
+.movie-card h3 {
+  margin-top:0.5rem;
+}
+
+/* Responsive Design */
+@media only screen and (max-width:768px) {
+ .overlay h1, .overlay h2 {
+   font-size:2rem; 
+ }
+ .movies-list {
+   flex-direction:column; 
+   align-items:center;
+ }
+}
