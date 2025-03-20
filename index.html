@@ -1,56 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cinema Parallax Effect</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.parallax {
+  /* The image used */
+  background-image: url("images/movie1.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
 </head>
 <body>
 
-  <!-- Hero Section -->
-  <section class="parallax hero">
-    <div class="overlay">
-      <h1>Welcome to Star Cinema</h1>
-    </div>
-  </section>
+<p>LADY BIRD INDIEWIRE REVIEW</p>
 
-  <!-- About Section -->
-  <section class="content">
-    <h2>Experience Movies Like Never Before</h2>
-    <p>Enjoy crystal-clear visuals, immersive sound, and luxurious comfort at Star Cinema. Our theatres offer the latest blockbusters and timeless classics, ensuring an unforgettable cinema experience.</p>
-  </section>
+<div class="parallax"></div>
 
-  <!-- Movie Showcase Parallax -->
-  <section class="parallax movies">
-    <div class="overlay">
-      <h2>Now Showing</h2>
-    </div>
-  </section>
+<div style="height:1000px;background-color:red;font-size:36px">
+In “Lady Bird,” an angst-riddled teen copes with her restrictive Catholic high school, bickers with her doting parents, endures her first heartbreak, and dreams of escaping to a far-off place. There’s nothing fresh about that premise, but writer-director Greta Gerwig’s semi-biographical riff on her Sacramento upbringing elevates it to a new wavelength beaming with wit and insight. Anchored by Saoirse Ronan in a spunky lead role that registers as her very best, the movie confirms that Gerwig’s plucky screen presence translates into a richly confident filmmaking voice.
 
-  <!-- Movies List -->
-  <section class="content movies-list">
-    <div class="movie-card">  
-      <img src="./images/movie1.jpg" alt="Movie Poster">
-      <h3>Lady Bird</h3>
-    </div>
-    <div class="movie-card">  
-      <img src="./images/movie2.jpg" alt="Movie Poster">
-      <h3>Michael Clayton</h3>
-    </div>
-    <div class="movie-card">  
-      <img src="./images/movie3.jpg" alt="Movie Poster">
-      <h3>Tár </h3>
-    </div>
-  </section>
+“Lady Bird” is both snarky and sincere — a touching, markedly feminine ode to growing up that never takes its familiarity for granted. Gerwig earns the ability to make this rite-of-passage saga her own.
 
-  <!-- Footer Parallax -->
-  <section class="parallax footer-section">
-    <div class="overlay">
-      <h2>Visit Us Today!</h2>
-    </div>
-  </section>
+Related Stories</div>
 
 </body>
 </html>
